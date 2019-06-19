@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D017A4E22BA2263004A292F /* JasoseolCompanyListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D017A4D22BA2263004A292F /* JasoseolCompanyListService.swift */; };
+		0D017A5122BA27C0004A292F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D017A5022BA27C0004A292F /* Extensions.swift */; };
 		0D0FDB3522B9D44200B4D785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FDB3422B9D44200B4D785 /* AppDelegate.swift */; };
 		0D0FDB3722B9D44200B4D785 /* JobOpeningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FDB3622B9D44200B4D785 /* JobOpeningVC.swift */; };
 		0D0FDB3A22B9D44200B4D785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0FDB3822B9D44200B4D785 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D017A4D22BA2263004A292F /* JasoseolCompanyListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasoseolCompanyListService.swift; sourceTree = "<group>"; };
+		0D017A5022BA27C0004A292F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0D0FDB3122B9D44200B4D785 /* AnchoreerPreTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchoreerPreTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0FDB3422B9D44200B4D785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D0FDB3622B9D44200B4D785 /* JobOpeningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOpeningVC.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D017A4F22BA27A6004A292F /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				0D017A5022BA27C0004A292F /* Extensions.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
 		0D0FDB2822B9D44200B4D785 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +182,7 @@
 		0D0FDB6422B9DBE700B4D785 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0D017A4F22BA27A6004A292F /* Function */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,6 +199,7 @@
 		0D0FDB6622B9DBF700B4D785 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0D017A4D22BA2263004A292F /* JasoseolCompanyListService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -458,9 +472,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0FDB3722B9D44200B4D785 /* JobOpeningVC.swift in Sources */,
+				0D017A5122BA27C0004A292F /* Extensions.swift in Sources */,
 				0D0FDB3522B9D44200B4D785 /* AppDelegate.swift in Sources */,
 				0DD412B722BA0EB3002CF9FA /* CompanyInfoVO.swift in Sources */,
 				0DD412B522BA058D002CF9FA /* JobOpeningCell.swift in Sources */,
+				0D017A4E22BA2263004A292F /* JasoseolCompanyListService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

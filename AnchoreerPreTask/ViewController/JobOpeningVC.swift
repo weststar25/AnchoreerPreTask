@@ -12,15 +12,11 @@ class JobOpeningVC : UIViewController {
     @IBOutlet weak var jobOpeningTableView: UITableView!
     
     var companyList: [CompanyInfoVO] = []
-    
+    var filePath: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTableView()
-    }
-    
-    func setUpTableView() {
-        self.jobOpeningTableView.delegate = self
-        self.jobOpeningTableView.dataSource = self
+        self.getJSONData()
     }
 }
 
@@ -34,6 +30,22 @@ extension JobOpeningVC: UITableViewDelegate, UITableViewDataSource {
         guard self.companyList.count > 0 else { return cell }
         cell.configure(data: self.companyList[indexPath.row])
         return cell
+    }
+}
+
+extension JobOpeningVC {
+    func setUpTableView() {
+        self.jobOpeningTableView.delegate = self
+        self.jobOpeningTableView.dataSource = self
+    }
+    
+    func getJSONData() {
+        guard let file  = Bundle.main.url(forResource: "App_iOS", withExtension: "json") else { return }
+        JasoseolCompanyListService.sharedInstance.getCompanyList(file: file) { (result) in
+            print(result)
+            self.companyList = result
+            self.jobOpeningTableView.reloadData()
+        }
     }
 }
 
